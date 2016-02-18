@@ -690,6 +690,9 @@ body{
     bottom: 100px;
     cursor: pointer;
 }
+.app{
+    bottom: 300px;
+}
 .erweima img{
     width:100%;
 }
