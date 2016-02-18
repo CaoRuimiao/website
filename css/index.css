@@ -594,8 +594,8 @@ body{
     position: relative;
 }
 .contact-con{
-    /*width:78%;*/
-    width:72%;
+    width:78%;
+    /*width:72%;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -640,8 +640,8 @@ body{
 .contact-mes{
     /*width: 60%;*/
     position: absolute;
-    top: 38%;
-    left: 30%;
+    top: 36%;
+    left: 20%;
     line-height: 50px;
 }
 /*----------------------------------------*/
