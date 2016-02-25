@@ -689,6 +689,7 @@ body{
     right: -95px;
     bottom: 100px;
     cursor: pointer;
+    z-index: 10000;
 }
 .app{
     bottom: 300px;
