@@ -322,17 +322,17 @@ $(function(){
             });
     });
     //个人站二维码
-    $(".erweima").hover(function(){
-        $(this).finish();
-        $(this).animate({"right":"0px"},600);
-    },function(){
-        if($(window).outerWidth<700){
-            $(this).animate({"right":"-95px"},600);
-        }else{
-            $(this).animate({"right":"-155px"},600);
-        }
-
-    })
+    //$(".erweima").hover(function(){
+    //    $(this).finish();
+    //    $(this).animate({"right":"0px"},600);
+    //},function(){
+    //    if($(window).outerWidth<700){
+    //        $(this).animate({"right":"-95px"},600);
+    //    }else{
+    //        $(this).animate({"right":"-155px"},600);
+    //    }
+    //
+    //})
 
 
 

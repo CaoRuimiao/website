@@ -725,9 +725,9 @@ body{
 .erweima{
     width:100px;
     height:100px;
-    position: fixed;
-    right: -95px;
-    bottom: 100px;
+    position:absolute;
+    left:0;
+    bottom:10px;
     cursor: pointer;
 }
 .erweima img{
@@ -737,6 +737,6 @@ body{
     .erweima{
         width:160px;
         height:160px;
-        right:-155px;
+        /*right:-155px;*/
     }
 }
