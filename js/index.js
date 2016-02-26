@@ -33,8 +33,6 @@ $(function(){
     $(".h1-menu").click(function(){
        $(".header1-box").hide();
        var i=$(this).data("index");
-       $(".h1-menu").removeClass("active");
-       $(this).addClass("active");
        var newtop=$($(".content")[i]).offset().top;
        $({top:$(window).scrollTop()}).animate(
            {top:newtop},
@@ -51,8 +49,6 @@ $(function(){
     });
     $(".header2-item").click(function(){
        var i=$(this).data("index");
-       $(".header2-item").removeClass("active");
-       $(this).addClass("active");
        var newtop=$($(".content")[i]).offset().top;
        $({top:$(window).scrollTop()}).animate(
            {top:newtop},
@@ -72,8 +68,6 @@ $(function(){
             $(".h1-menu").click(function(){
                 $(".header1-box").hide();
                 var i=$(this).data("index");
-                $(".h1-menu").removeClass("active");
-                $(this).addClass("active");
                 $(".contact .img").css({"-webkit-aniamate":"fadeInLeft1 1s"});
                 var newtop=$($(".content")[i]).offset().top;
                 $({top:$(window).scrollTop()}).animate(
@@ -107,8 +101,6 @@ $(function(){
             //-----------------------------
             $(".header2-item").click(function(){
                 var i=$(this).data("index");
-                $(".header2-item").removeClass("active");
-                $(this).addClass("active");
                 var newtop=$($(".content")[i]).offset().top;
                 $({top:$(window).scrollTop()}).animate(
                     {top:newtop},
@@ -120,19 +112,19 @@ $(function(){
                     });
             });
             //---------------------------------
-            var len=$(".content").length-1;
-            $('.header2-item').each(function(i){
-                if(i==len && $(window).scrollTop()>=$($('.content')[len]).offset().top-1){
-                    $($(".header2-item")[i]).addClass("active");
-                }else{
-                    if($(window).scrollTop()>=$($('.content')[i]).offset().top-1 && $(window).scrollTop()<$($('.content')[i+1]).offset().top-1){
-                        $($(".header2-item")[i]).addClass("active"); //内容对应菜单
-                    }
-                    else{
-                        $($(".header2-item")[i]).removeClass("active");
-                    }
-                }
-            });
+            //var len=$(".content").length-1;
+            //$('.header2-item').each(function(i){
+            //    if(i==len && $(window).scrollTop()>=$($('.content')[len]).offset().top-1){
+            //        $($(".header2-item")[i]).addClass("active");
+            //    }else{
+            //        if($(window).scrollTop()>=$($('.content')[i]).offset().top-1 && $(window).scrollTop()<$($('.content')[i+1]).offset().top-1){
+            //            $($(".header2-item")[i]).addClass("active"); //内容对应菜单
+            //        }
+            //        else{
+            //            $($(".header2-item")[i]).removeClass("active");
+            //        }
+            //    }
+            //});
         }
 
         if($(window).scrollTop()>=$(".contact").offset().top){
@@ -144,6 +136,9 @@ $(function(){
     $(".header1-item:first-child").click(function(){
         $(".header1-box").slideToggle("slow");
     });
+
+
+
     //my skills部分
     var classes=["html 85%","css 85%","javaScript 90%","jQuery 88%","bootstrap 86%","less 80%","PS 88%","AI 86%"];
     for(var i=0;i<classes.length;i++){
