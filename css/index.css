@@ -4,6 +4,7 @@
 body{
     font-family: "iconfont";
     -webkit-user-select: none;
+    overflow-x:hidden;
 }
 @font-face {
     font-family: "iconfont";
